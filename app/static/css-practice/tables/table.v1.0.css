@@ -1,0 +1,63 @@
+/*
+  <table class="tbl-danger">
+    <thead>
+      <tr>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+        <th>Heading 2</th>
+        <th>Heading 2</th>
+        <th>Heading 2</th>
+        <th>Heading 2</th>
+        <th>Heading 2</th>
+        <th>Heading 2</th>
+        <th>Heading 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>value 1</td>
+        <td>value 2</td>
+        <td>value 2</td>
+        <td>value 2</td>
+        <td>value 2</td>
+        <td>value 2</td>
+        <td>value 2</td>
+        <td>value 2</td>
+        <td>value 2</td>
+      </tr>
+    </tbody>
+  </table>
+*/
+table{
+  width : 100%;
+  border-collapse: collapse;
+  color: #000;
+}
+table.tbl-info th{
+  background : #ccffcc;
+}
+table th, table td{
+  text-align : left;
+  padding: 0.4em;
+}
+table td{
+  border: 1px solid #ddd;
+}
+table.tbl-info tr:hover{
+  background: #f2fff2;
+}
+table.tbl-positive th{
+  background: #ccffff;
+}
+table.tbl-positive tr:hover{
+  background : #e2f9f9;
+}
+table.tbl-danger th{
+  background: #ffb3b3;
+}
+table.tbl-danger tr:hover{
+  background : #ffe8e8;
+}
+
+
+

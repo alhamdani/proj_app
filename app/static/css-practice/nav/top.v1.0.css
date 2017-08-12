@@ -1,0 +1,50 @@
+/*
+	<div class="top-nav">
+		<ul>
+			<li class="active">
+				<a href="#!">
+					Home
+				</a>
+			</li>
+			<li>
+				<a href="#!">
+					About
+				</a>
+			</li>
+			<li>
+				<a href="#!">
+					Package
+				</a>
+			</li>
+		</ul>
+	</div>
+*/
+
+div.top-nav{
+	width : 100%;
+}
+
+div.top-nav > ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*overflow : auto;*/
+	text-align: center;
+}
+div.top-nav li{
+	display: inline;
+	/*float: left;*/
+}
+div.top-nav ul li > a{
+  /*display: block;*/
+  text-align: center;
+  padding: 0.4em;
+  text-decoration: none;
+  color: #000;
+}
+div.top-nav ul li > a:hover{
+  background : #e4fafa;
+}
+div.top-nav ul li.active > a{
+  border-bottom : 2px solid #53dfdf;
+}

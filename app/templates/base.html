@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load staticfiles %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reactjs with MobX</title>
+
+  <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+  <!--<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">-->
+  <link rel="stylesheet" href="{% static 'muicss/mui.css' %}">
+</head>
+<body>
+  {% csrf_token %}
+  {% load render_bundle from webpack_loader %}
+
+  <div id="main-content"></div>
+
+  {% render_bundle 'vendors' %}
+  {% render_bundle 'index' %}
+</body>
+</html>

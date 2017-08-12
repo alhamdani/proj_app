@@ -1,0 +1,62 @@
+/*
+  <div>
+		<button class="btn btn-warn">Warning</button>
+		<button class="btn btn-okay">Okay</button>
+		<button class="btn btn-cancel">Cancel</button>
+		<button class="btn btn-edit">Edit</button>
+	</div>
+*/
+
+.btn{
+  padding: 0.5em;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  transition: background .1s .1s ease-in-out, transform .1s  ease-in;
+  border: none;
+  min-width: 5em;
+}
+
+
+/* 
+  btn-okay 
+    -> positive
+  btn-cancel 
+    -> negative
+  btn-warning
+    -> not apporiate, can effect many things
+  btn-edit
+    -> editing
+*/
+.btn:hover{
+  transform: scale(1.05);
+}
+.btn:active {
+  transform: scale(1);
+}
+.btn-warn{
+  background: #ff3352;
+}
+
+.btn-warn:hover {
+  background: #cc0018; 
+}
+.btn-okay{
+  background: #4dd2ff;
+}
+.btn-okay:hover{
+  background: #00b0e6;
+}
+.btn-cancel{
+  background: #33cccc; 
+}
+.btn-cancel:hover{
+  background: #248f8f;
+}
+.btn-edit{
+  background: #ff8533;
+}
+.btn-edit:hover{
+  background: #e65c00;
+}
